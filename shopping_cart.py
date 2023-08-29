@@ -11,11 +11,11 @@ def calculate_total(cart):
     return total
 
 
-def display_total(Total):
+def display_total(total):
     """
     Funtion to print out the resulting total
     """
-    print("Total price: " + Total)
+    print("Total price: " + total)
 
 
 CART = [
