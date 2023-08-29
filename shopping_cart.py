@@ -1,4 +1,10 @@
+"""
+ELU WEEK 31 Linting assignment, Chris Dallat
+"""
 def CalculateTotal(cart):
+    """
+    Funtion to calculate the total price of items in cart
+    """
     total = 0
     for item in cart:
         total += item['price']
@@ -6,6 +12,9 @@ def CalculateTotal(cart):
 
 
 def display_total(Total):
+    """
+    Funtion to print out the resulting total
+    """
     print("Total price: " + Total)
 
 
