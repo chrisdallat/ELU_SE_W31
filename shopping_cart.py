@@ -1,7 +1,7 @@
 """
 ELU WEEK 31 Linting assignment, Chris Dallat
 """
-def CalculateTotal(cart):
+def calculate_total(cart):
     """
     Funtion to calculate the total price of items in cart
     """
@@ -27,5 +27,5 @@ CART = [
 for item in CART:
     print(f"Item: {item['name']} - Price: ${item['price']}")
 
-shopping_cart_total = CalculateTotal(CART)
+shopping_cart_total = calculate_total(CART)
 display_total(shopping_cart_total)
