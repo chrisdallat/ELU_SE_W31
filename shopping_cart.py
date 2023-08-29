@@ -4,8 +4,10 @@ def CalculateTotal(cart):
         total += item['price']
     return total
 
+
 def display_total(Total):
     print("Total price: " + Total)
+    
 
 CART = [
     {'name': 'Item A', 'price': 10.99},
