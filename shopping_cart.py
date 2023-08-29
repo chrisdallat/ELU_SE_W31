@@ -24,8 +24,8 @@ CART = [
     {'name': 'Item C', 'price': '8.49'}
 ]
 
-for item in CART:
-    print(f"Item: {item['name']} - Price: ${item['price']}")
+for item_in_cart in CART:
+    print(f"Item: {item_in_cart['name']} - Price: ${item_in_cart['price']}")
 
 shopping_cart_total = calculate_total(CART)
 display_total(shopping_cart_total)
