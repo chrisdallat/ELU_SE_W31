@@ -7,7 +7,7 @@ on:
 
 jobs:
   static_analysis:
-    name: Static Analysis
+    name: Static Analysis and Testing
     runs-on: macos-latest 
    
     steps:
