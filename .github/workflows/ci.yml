@@ -1,26 +1,27 @@
-name: Static Analysis and Tests
+name: Static Analysis and Testing
 
 on:
   push:
     branches:
-      - main 
+      - main  # Adjust this branch name as needed
 
 jobs:
   static_analysis:
     name: Static Analysis and Testing
-    runs-on: macos-latest 
-   
+    runs-on: macos-latest
+
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
 
     - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.8
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
 
     - name: Run Static Analysis
-      run: flake8 shopping_cart.py 
-    
+      run: flake8 shopping_cart.py
+
     - name: Run Test suite
       run: python -m unittest test_shopping_cart.py
+
