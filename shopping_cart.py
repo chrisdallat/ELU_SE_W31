@@ -17,7 +17,7 @@ def display_total(total):
     """
     Function to print out the resulting total
     """
-    print("Total price: " + str(total)) 
+    print("Total price: " + str(total))
 
 
 CART = [
