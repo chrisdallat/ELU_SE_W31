@@ -9,7 +9,7 @@ def calculate_total(cart):
     """
     total = 0
     for item in cart:
-        total += item['price']
+        total = total + item['price']
     return total
 
 
