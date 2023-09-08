@@ -20,3 +20,6 @@ jobs:
 
     - name: Run Static Analysis
       run: flake8 shopping_cart.py 
+    
+    - name: Run Test suite
+      run: python -m unittest test_shopping_cart.py
