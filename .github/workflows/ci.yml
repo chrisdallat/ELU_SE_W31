@@ -1,0 +1,22 @@
+on:
+  push:
+    branches:
+      - main 
+
+jobs:
+  static_analysis:
+    name: Static Analysis
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+
+    runs-on: ${{ matrix.os }}
+
+    #not necessary in this case, but good practice apparently, so you can change which branch its running on.
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Run Static Analysis
+      run: flake8 shopping_cart.py 

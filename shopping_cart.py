@@ -1,6 +1,8 @@
 """
 ELU WEEK 31 Linting assignment, Chris Dallat
 """
+
+
 def calculate_total(cart):
     """
     Funtion to calculate the total price of items in cart
