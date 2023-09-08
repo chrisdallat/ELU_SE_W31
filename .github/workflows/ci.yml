@@ -7,12 +7,10 @@ jobs:
   static_analysis:
     name: Static Analysis
 
-    strategy:
-      matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
-
-    runs-on: ${{ matrix.os }}
-
+    run_tests_macos:
+    name: Run Tests on macOS
+    runs-on: macos-latest 
+   
     #not necessary in this case, but good practice apparently, so you can change which branch its running on.
     steps:
     - name: Checkout Repository
