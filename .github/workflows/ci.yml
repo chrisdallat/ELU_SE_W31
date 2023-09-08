@@ -1,3 +1,5 @@
+name: Static Analysis and Tests
+
 on:
   push:
     branches:
@@ -6,15 +8,16 @@ on:
 jobs:
   static_analysis:
     name: Static Analysis
-
-    run_tests_macos:
-    name: Run Tests on macOS
     runs-on: macos-latest 
    
-    #not necessary in this case, but good practice apparently, so you can change which branch its running on.
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
+
+    - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
 
     - name: Run Static Analysis
       run: flake8 shopping_cart.py 
